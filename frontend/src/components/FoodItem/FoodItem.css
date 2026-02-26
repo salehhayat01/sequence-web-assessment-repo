@@ -79,4 +79,12 @@
 
 .food-item-counter img{
     width: 30px;
+    flex-shrink: 0;
+}
+
+.food-item-counter p{
+    min-width: 28px;
+    text-align: center;
+    margin: 0;
+    font-weight: 500;
 }
