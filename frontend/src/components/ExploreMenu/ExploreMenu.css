@@ -21,11 +21,18 @@
     gap: 30px;
     text-align: center;
     margin: 20px 0px;
-    overflow: scroll;
+    overflow-x: auto;
+    overflow-y: visible;
+    padding: 15px 15px;
 }
 
 .explore-menu-list::-webkit-scrollbar{
     display: none;
+}
+
+.explore-menu-list-item{
+    overflow: visible;
+    padding: 12px 0;
 }
 
 .explore-menu-list-item img{
@@ -33,7 +40,11 @@
     min-width: 80px;
     cursor: pointer;
     border-radius: 50%;
-    transition: 0.2s;
+    transition: transform 0.3s ease;
+}
+
+.explore-menu-list-item:hover img{
+    transform: scale(1.1);
 }
 
 .explore-menu-list-item p{
